@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #060000;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: #f8da5d;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'REM', sans-serif;
+}
+
+li:hover {
+    color: #d55c09;
+}
+
+#Logo {
+    width: 250px;
+    height: 100%;
+}
+
+#Banner {
+    background-image: url('https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/088974ed-2198-11ee-aa6e-9587410378a2/345890079_649442590532021_8425814995231854364_n.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'REM', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d55c09;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #060000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'REM', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 3px 3px 20px 20px rgba(254, 255, 115, .3);
+}
+
+.banner-1 {
+    background-image: url('https://imagedelivery.net/1fekSLXVngfnkES_c4QsWQ/hitsite.com.br/2023/05/filme-2.jpg/w=9999');
+}
+
+.banner-2 {
+    background-image: url('https://www.themarysue.com/wp-content/uploads/2023/07/Florence-Pugh-Jean-Tatlock-Oppenheimer-1.jpg?fit=1200%2C779');
+}
+
+.banner-3 {
+    background-image: url('https://ovicio.com.br/wp-content/uploads/2023/07/20230712-robert-downey-jr-in-oppenheimer.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'REM', sans-serif;
+    margin: 10px 0;
+}
+
+.footer-naviation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-li {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation, .footer-li {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #Banner {
+        background-position: 25%;
+    }
+    
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    #logo {
+        width: 80%;
+    }
+}
