@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #060000;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: #f8da5d;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'REM', sans-serif;
+}
+
+li:hover {
+    color: #d55c09;
+}
+
+#Logo {
+    width: 250px;
+    height: 100%;
+}
+
+#Banner {
+    background-color: #f8da5d;
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #f8da5d;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    background-color: #f8da5d;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'REM', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 3px 3px 20px 20px rgba(0, 0, 0, 0.545);
+}
+
+.banner-1 {
+    background-image: url('https://imagedelivery.net/1fekSLXVngfnkES_c4QsWQ/hitsite.com.br/2023/05/filme-2.jpg/w=9999');
+}
+
+.banner-2 {
+    background-image: url('https://www.themarysue.com/wp-content/uploads/2023/07/Florence-Pugh-Jean-Tatlock-Oppenheimer-1.jpg?fit=1200%2C779');
+}
+
+.banner-3 {
+    background-image: url('https://ovicio.com.br/wp-content/uploads/2023/07/20230712-robert-downey-jr-in-oppenheimer.jpg');
+}
+
+.banner-4 {
+    background-image: url('https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/07/24/oppenheimer-katherine-kitty-emily-blunt.jpg');
+}
+
+.banner-5 {
+    background-image: url('https://avancegames.com.br/wp-content/uploads/2023/05/Albert-Einstein-Oppenheimer-Avance-Games.jpg');
+}
+
+.banner-6 {
+    background-image: url('https://images.immediate.co.uk/production/volatile/sites/3/2023/07/GF-00774-c687139.jpg?quality=90&crop=1247px,169px,1647px,1097px&fit=700,466');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'REM', sans-serif;
+
+}
+
+.footer-naviation, .footer-li {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-logo {
+    width: 75%;
+    height: 50%;
+}
+
+@media(max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    .footer-naviation, .footer-li {
+        display: block;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+    }
+
+    #Banner {
+        width: auto;
+        height: auto;
+        padding: 25px;
+    }
+
+}
